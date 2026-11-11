@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">  
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Snake Arcade Game</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="app">
-    <header class="header">  
+    <header class="header">
       <h1>Snake</h1>
       <div class="score-board">
         <div class="score-item">
           <span class="label">Score</span>
           <span id="score" class="value font-mono">0</span>
         </div>
-        <div class="score-item">  
+        <div class="score-item">
           <span class="label">Best</span>
           <span id="high-score" class="value font-mono">0</span>
         </div>
       </div>
     </header>
     <section class="game-container">
-      <canvas id="board" width="400" height="400"></canvas>  
+      <canvas id="board" width="400" height="400"></canvas>
       <div id="overlay" class="overlay">
         <h2 id="overlay-title">Ready</h2>
         <p id="overlay-text">Press start or any arrow key</p>
         <button id="start-btn" class="btn">Play Game</button>
       </div>
     </section>
-    <footer class="footer">  
+    <footer class="footer">
       <p>Use arrow keys or onscreen buttons to direct the snake.</p>
       <div class="controls">
         <button id="btn-up" class="btn-ctrl">Up</button>
         <div class="controls-row">
           <button id="btn-left" class="btn-ctrl">Left</button>
           <button id="btn-down" class="btn-ctrl">Down</button>
-          <button id="btn-right" class="btn-ctrl">Right</button>  
+          <button id="btn-right" class="btn-ctrl">Right</button>
         </div>
       </div>
     </footer>
   </main>
   <script src="script.js"></script>
 </body>
-</html>  
-
-
+</html>
